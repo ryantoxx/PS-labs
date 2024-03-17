@@ -52,11 +52,11 @@ xlabel('Value', 'FontSize', 35);
 ylabel('Frequency', 'FontSize', 35);
 
 % 1.5 Digital Filter
-% Digital Filter
 figure(5);
 Ts = 0.01;
 om0 = 2*pi;  % frequency of oscillations (1 Hz)
 dz = 0.005;  % damping ratio
+A = 1;
 
 % filter coefficients
 oms = om0 * Ts;
@@ -95,5 +95,7 @@ set(gca, 'YGrid', 'on');
 title('Filtered White Noise Signal, Ts = 0.001', 'FontSize', 42);
 xlabel('Time (s)', 'FontSize', 35);
 ylabel('Amplitude', 'FontSize', 35);
+
+
 
 
